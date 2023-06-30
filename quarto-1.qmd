@@ -1,0 +1,48 @@
+---
+title: "Parisian Immigration Attitudes"
+author: "Luit Deka"
+format: html
+execute: 
+  echo: false
+---
+
+#Focus Questions
+> What will be the attitude toward immigration, measured on the 3 to 15 scale, of a Parisian after they hear two Arabic speakers walking down the street? What about the average Parisian? What about the 90th percentile of Parisians?
+What about the average Parisian?
+What about the 90th percentile of Parisians?
+
+>Preceptor Table is a table of data with rows and columns such that, if there is no missing data, it is easy to estimate the quantity of interest.
+
+
+Unit: Parisians
+Outcome-Attitude toward immigrant
+Covariate-heard Arabic speaker
+
+Predictive not causal! Only one outcome.
+
+Validity is the consistency, or lack there of, in the columns of our dataset and the corresponding columns in our Preceptor Table. In order to consider the two datasets to be drawn from the same population, the columns from one must be have a valid correspondence with the columns in the other. Validity, if true (or at least reasonable), allows us to construct the Population Table.
+
+Criticism: Looking for Attidudes towards Arabic, but we have attitudes toward Spanish speakers. Hence, the columns are not consistent. Parisians vs. Americans
+
+Stability: Different people and time periods
+
+Unconfoundedness: Not Causal so doesn't matter.
+
+Representativeness: The people could be rich or poor. The train might be for the rich. 
+
+
+
+```{r}
+#| warning: false
+#| message: false
+library(tidyverse)
+library(rstanarm)
+library(dplyr)
+library(primer.data)
+```
+
+```{r}
+trains |>
+  select()
+```
+
